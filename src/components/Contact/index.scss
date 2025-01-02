@@ -1,0 +1,124 @@
+.contact-form {
+    width: 100%;
+    margin-top: 20px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type='text'],
+    input[type='email'] {
+        width: 100%;
+        border: 0;
+        background: #2541e4;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+        border-radius: 30px;
+    }
+
+    textarea {
+        width: 100%;
+        border: 0;
+        background: #2541e4;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px;
+        min-height: 150px;
+        box-sizing: border-box;
+        border-radius: 30px;
+
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        /* Completely removes the outline */
+    }
+
+    .flat-button {
+        color: #ffd700;
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #ffd700;
+        float: right;
+        border-radius: 4px;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+
+        }
+
+    }
+
+}
+
+.container {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    box-sizing: border-box;  
+}
+
+.content-area {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+    width: 100%;
+    min-height: 400px; 
+    flex-wrap: wrap; 
+
+    @media (max-width: 768px) {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+
+.text-zone {
+    flex: 1; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+    margin-right: 20px; 
+
+    @media (max-width: 768px) {
+        max-width: 100%; 
+        margin-right: 0; 
+    }
+}
